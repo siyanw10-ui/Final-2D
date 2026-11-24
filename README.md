@@ -2,7 +2,6 @@
 ## Devlogs
 
 ### Milestone 1
-
 1. Technical Problem and Solution
 
 While working on my final project, I noticed that the cat could push items just by walking into them. This was not what I wanted because the main mechanic of my game was kicking items. At first, I thought there was something wrong with my kicking script. However, I realized that the problem was actually related to the colliders. I created separate layers for the player and the items and changed their settings in the Physics 2D Layer Collision Matrix. I also kept the kick colliders separate from the player’s body. In the Kickable script, I used AddForce() with ForceMode2D.Impulse inside the Kick() method. After testing several times, I was able to make the items move when kicked instead of being pushed by the cat.
